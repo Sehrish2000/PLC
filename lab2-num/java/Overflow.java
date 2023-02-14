@@ -86,7 +86,7 @@ public class Overflow
         for ( int j = 1; j <= m; j++ )
         {
             ns = ns * n;
-//             assert ?? : "Floating-point overflow";
+           assert <= Float.MIN_VALUE : "Floating-point overflow";
             resultList.add(ns);
         }
         return resultList;
